@@ -1,7 +1,10 @@
 //Function that renders the about page
-function aboutPage() {
+export function aboutPage() {
+
     //Catch main container and create contact info container
-    const mainContainer = document.querySelector(".about-page");
+    const mainContainer = document.querySelector("#content");
+    mainContainer.innerHTML = "";
+
     const contactContainer = document.createElement("div");
     contactContainer.className = "contact-info";
 

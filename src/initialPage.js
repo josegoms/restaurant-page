@@ -1,5 +1,14 @@
 //Function that renders the page Home section
-function homePage() {
+export function homePage() {
+
+    //Create and catch content containers
+    const mainContainer = document.querySelector("#content");
+    mainContainer.innerHTML = "";
+
+    const text = document.createElement("div");
+    text.className = "text-container";
+    const socialMedia = document.createElement("div");
+    socialMedia.className = "social-media-container";
 
     //Add title
     const title = document.createElement("h1");
@@ -18,18 +27,6 @@ function homePage() {
 
     const twitter = document.createElement("div");
     twitter.textContent = "@pizzerianapoletana";
-
-    //Create and catch content containers
-    const mainContainer = document.querySelector(".home-page");
-    if (!mainContainer) {
-        console.error("No home-page");
-        return;
-    }
-    
-    const text = document.createElement("div");
-    text.className = "text-container";
-    const socialMedia = document.createElement("div");
-    socialMedia.className = "social-media-container";
 
     //Append children
     text.appendChild(title);
