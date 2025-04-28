@@ -93,9 +93,11 @@ header button:hover {
   background-color: #4B5320;
 }
 
-#logo {
-  font-size: 2rem;
-  font-weight: bold;
+#logo img {
+  height: 4rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
 }
 
 /*Main page styles*/
