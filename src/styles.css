@@ -267,3 +267,20 @@ header button:hover {
   background-color: #FAF3E0;
   background-size: cover;
 }
+
+.contact-info h3 {
+  font-family: "Cormorant-Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #572202;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.contact-info p {
+  font-family: "Cormorant-Garamond", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4B2E2E;
+}
