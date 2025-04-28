@@ -168,3 +168,11 @@ header button:hover {
 .social-media-container {
   font-family: sans-serif;
 }
+
+.social-media-container div {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}

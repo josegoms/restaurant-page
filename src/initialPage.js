@@ -1,3 +1,8 @@
+import instagramSvg from "./assets/instagram.svg";
+import facebookSvg from "./assets/facebook.svg";
+import twitterSvg from "./assets/twitter.svg";
+
+
 //Function that renders the page Home section
 export function homePage() {
 
@@ -18,15 +23,30 @@ export function homePage() {
     const description = document.createElement("p");
     description.textContent = "Welcome to Pizzeria Napoletana - where tradition and flavor meet in every slice. Our pizzas are crafted with artisanal dough slowly fermented for 48 hours, fresh ingredients selected daily, and baked in a wood-fired oven reaching 850°F. Each bite tells a story of Italian culinary passion passed down through generations. From the classic Margherita to our exclusive creation featuring local ingredients, we invite you to taste the difference that only time, dedication, and quality ingredients can deliver. Join our family for an authentic experience that goes far beyond just a meal.";
 
-    //Add social profiles
+    //Add social profiles 
     const instagram = document.createElement("div");
-    instagram.textContent = "@pizzerianapoletana";
+    const instagramIcon = document.createElement("img");
+    instagramIcon.src = instagramSvg; // Use the imported SVG URL
+    instagramIcon.alt = "Instagram Icon";
+    instagramIcon.className = "social-icon";
+    instagram.appendChild(instagramIcon);
+    instagram.appendChild(document.createTextNode("@pizzerianapoletana"));
 
     const facebook = document.createElement("div");
-    facebook.textContent = "www.facebook.com/pizzerianapoletana";
+    const facebookIcon = document.createElement("img");
+    facebookIcon.src = facebookSvg; // Use the imported SVG URL
+    facebookIcon.alt = "Facebook Icon";
+    facebookIcon.className = "social-icon";
+    facebook.appendChild(facebookIcon);
+    facebook.appendChild(document.createTextNode("www.facebook.com/pizzerianapoletana"));
 
     const twitter = document.createElement("div");
-    twitter.textContent = "@pizzerianapoletana";
+    const twitterIcon = document.createElement("img");
+    twitterIcon.src = twitterSvg; // Use the imported SVG URL
+    twitterIcon.alt = "Twitter Icon";
+    twitterIcon.className = "social-icon";
+    twitter.appendChild(twitterIcon);
+    twitter.appendChild(document.createTextNode("@pizzerianapoletana"));
 
     //Append children
     text.appendChild(title);
