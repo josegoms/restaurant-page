@@ -2,8 +2,9 @@
 export function menuPage() {
 
     //Create content container and catch main container
-    const mainContainer = document.querySelector("#content");
+    const mainContainer = document.querySelector("body > div");
     mainContainer.innerHTML = "";
+    mainContainer.id = "menu-page";
 
     const cardsContainer = document.createElement("div");
     cardsContainer.className = "cards-container";
@@ -38,35 +39,35 @@ export function menuPage() {
     card8.className = "card";
 
     //Add card content and button
-    const card1Title = document.createElement("h6");
+    const card1Title = document.createElement("h2");
     const card1Description = document.createElement("p");
     const card1Button = document.createElement("button");
 
-    const card2Title = document.createElement("h6");
+    const card2Title = document.createElement("h2");
     const card2Description = document.createElement("p");
     const card2Button = document.createElement("button");
 
-    const card3Title = document.createElement("h6");
+    const card3Title = document.createElement("h2");
     const card3Description = document.createElement("p");
     const card3Button = document.createElement("button");
 
-    const card4Title = document.createElement("h6");
+    const card4Title = document.createElement("h2");
     const card4Description = document.createElement("p");
     const card4Button = document.createElement("button");
 
-    const card5Title = document.createElement("h6");
+    const card5Title = document.createElement("h2");
     const card5Description = document.createElement("p");
     const card5Button = document.createElement("button");
 
-    const card6Title = document.createElement("h6");
+    const card6Title = document.createElement("h2");
     const card6Description = document.createElement("p");
     const card6Button = document.createElement("button");
 
-    const card7Title = document.createElement("h6");
+    const card7Title = document.createElement("h2");
     const card7Description = document.createElement("p");
     const card7Button = document.createElement("button");
 
-    const card8Title = document.createElement("h6");
+    const card8Title = document.createElement("h2");
     const card8Description = document.createElement("p");
     const card8Button = document.createElement("button");
 
@@ -117,19 +118,19 @@ export function menuPage() {
     card12.className = "card";
 
     // Drink content
-    const card9Title = document.createElement("h6");
+    const card9Title = document.createElement("h2");
     const card9Description = document.createElement("p");
     const card9Button = document.createElement("button");
 
-    const card10Title = document.createElement("h6");
+    const card10Title = document.createElement("h2");
     const card10Description = document.createElement("p");
     const card10Button = document.createElement("button");
 
-    const card11Title = document.createElement("h6");
+    const card11Title = document.createElement("h2");
     const card11Description = document.createElement("p");
     const card11Button = document.createElement("button");
 
-    const card12Title = document.createElement("h6");
+    const card12Title = document.createElement("h2");
     const card12Description = document.createElement("p");
     const card12Button = document.createElement("button");
 

@@ -2,8 +2,9 @@
 export function aboutPage() {
 
     //Catch main container and create contact info container
-    const mainContainer = document.querySelector("#content");
+    const mainContainer = document.querySelector("body > div");
     mainContainer.innerHTML = "";
+    mainContainer.id = "about-page";
 
     const contactContainer = document.createElement("div");
     contactContainer.className = "contact-info";

@@ -7,8 +7,9 @@ import twitterSvg from "./assets/twitter.svg";
 export function homePage() {
 
     //Create and catch content containers
-    const mainContainer = document.querySelector("#content");
+    const mainContainer = document.querySelector("body > div");
     mainContainer.innerHTML = "";
+    mainContainer.id = "content";
 
     const text = document.createElement("div");
     text.className = "text-container";
