@@ -271,6 +271,10 @@ header button:hover {
   background-size: cover;
 }
 
+.contact-info {
+  margin-top: 5rem;
+}
+
 .contact-info h3 {
   font-family: "Cormorant-Garamond", serif;
   font-size: 1.5rem;
